@@ -71,10 +71,12 @@ h3 {
 }
 
 .logo {
+  width: 80vw;
 }
 
 .heading-primary {
   padding: 10px;
+  font-size: 3vw;
 }
 
 .heading-primary-main {
@@ -237,16 +239,22 @@ h3 {
 }
 
 .infoboxes {
-  width: 70vw;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   text-align: center;
-  max-width: 1000px;
+  /*max-width: 1000px;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .infobox {
   margin: 25px;
   padding: 30px;
+  position: relative;
+  max-width: 600px;
 }
 .infobox-header-sub, .infobox-header-main {
   text-transform: uppercase;
@@ -257,14 +265,22 @@ h3 {
   font-size: 1em;
 }
 
+.infobox-text {
+  margin-bottom: 50px;
+}
 .btn:link, 
 .btn:visited {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
   text-transform: uppercase;
   text-decoration: none;
   display:inline-block;
   color: #eeeeee;
   width: 180px;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   transition: 1s ease-in-out;
 }
 
@@ -349,3 +365,161 @@ h3 {
   text-transform: uppercase;
 }
 
+/* MEDIA QUERIES */
+
+
+
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+  .tracks .all-tracks-heading {
+    font-size: 1.5em;
+  }
+  .tracks .track-description-heading-primary {
+    font-size: 1.125em;
+  }
+  
+  .tracks .track-description-heading-sub {
+    font-size: 0.45em;
+  }
+
+  .tracks p {
+    font-size: 0.85em;
+  }
+
+  .partners {
+    height: 120vh;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+  .tracks {
+    height: 150vh;
+  }
+
+  .partners {
+    height: 150vh;
+  }
+
+  .tracks .all-tracks-heading {
+    font-size: 1.5em;
+  }
+  .tracks .track-description-heading-primary {
+    font-size: 1.125em;
+  }
+  
+  .tracks .track-description-heading-sub {
+    font-size: 0.45em;
+  }
+
+  .tracks p {
+    font-size: 0.85em;
+  }
+}
+
+@media only screen 
+and (min-device-width : 511px)
+and (max-device-width : 767px) {
+  .tracks .all-tracks-heading {
+    font-size: 1.5em;
+  }
+  .tracks .track-description-heading-primary {
+    font-size: 1.125em;
+  }
+  
+  .tracks .track-description-heading-sub {
+    font-size: 0.45em;
+  }
+
+  .tracks p {
+    font-size: 0.85em;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+  .tracks .all-tracks-heading {
+    font-size: 1.5em;
+  }
+  .tracks .track-description-heading-primary {
+    font-size: 1.125em;
+  }
+  
+  .tracks .track-description-heading-sub {
+    font-size: 0.45em;
+  }
+
+  .tracks p {
+    font-size: 0.85em;
+  }
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+  .tracks .all-tracks-heading {
+    font-size: 1.5em;
+  }
+  .tracks .track-description-heading-primary {
+    font-size: 1.125em;
+  }
+  
+  .tracks .track-description-heading-sub {
+    font-size: 0.45em;
+  }
+
+  .tracks p {
+    font-size: 0.85em;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+  .infobox {
+    border: 2px solid green;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
