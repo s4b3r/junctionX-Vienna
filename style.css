@@ -103,6 +103,7 @@ h3 {
   justify-content: flex-end;
   flex-wrap: nowrap;
   min-height: 10vh;
+  margin-right: 50px;
 }
 
 .button {
@@ -111,11 +112,12 @@ h3 {
   margin-right: 70px;
 }
 
-.button-box a {
+.btn-interact:link, .btn-interact:visited {
   text-transform: uppercase;
-  color: black;
+  color: #232323;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 .mission {
@@ -185,7 +187,7 @@ h3 {
   padding: 10px 0 10px 0;
 }
 
-.tracks {
+.tracks, .partners {
   position: relative;
   background-color: #F5F2F2;
 }
@@ -195,7 +197,7 @@ h3 {
   padding: 10px 0 10px 0;
 }
 
-.track-description-box {
+.track-description-box, .partners-content-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -226,8 +228,6 @@ h3 {
   padding:5px 0 5px 0;
 }
 
-
-
 .track {
   padding: 20px 0 20px 0;
 }
@@ -235,3 +235,117 @@ h3 {
 .recruit {
   background-image: linear-gradient(#000000, #232323);
 }
+
+.infoboxes {
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  max-width: 1000px;
+}
+
+.infobox {
+  margin: 25px;
+  padding: 30px;
+}
+.infobox-header-sub, .infobox-header-main {
+  text-transform: uppercase;
+}
+
+.infobox-header-sub {
+  color: #9A9A9A;
+  font-size: 1em;
+}
+
+.btn:link, 
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display:inline-block;
+  color: #eeeeee;
+  width: 180px;
+  margin-top: 50px;
+  transition: 1s ease-in-out;
+}
+
+.btn-magenta {
+  border: #E60C85 1px solid;
+  height: 40px;
+  /*box-shadow: 3px 3px 5px 6px #ccc*/
+}
+
+.btn-white {
+  height: 40px;
+  border: #eee 1px solid;
+  transform: translate(5px, 5px);
+}
+
+.btn-text {
+  display: block;
+  transform: translate(-5px, 5px);
+}
+
+.btn:hover .btn-white {
+  transform: translate(0px, 0px);
+}
+
+.btn:active .btn-magenta {
+  background-color: #E60C85;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column
+}
+.partners-content-box {
+  flex-direction: column;
+}
+
+.partner-boxes-box {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.partner-box {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #E60C85;
+  margin: 5px 5px;
+}
+
+.partner-logo {
+  max-width: 80%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.partners-heading {
+  text-transform: uppercase;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: linear-gradient(#000000, #232323);
+}
+
+.buttons {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.btn-footer:link {
+  text-decoration: none;
+  color: #eee;
+  text-transform: uppercase;
+}
+
