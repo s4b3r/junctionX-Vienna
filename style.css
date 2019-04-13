@@ -46,14 +46,15 @@ h3 {
 }
 
 .page {
-    height: 95vh;
+    /*height: 95vh;*/
+    height: 920px;
     flex-direction: row;
     flex-flow: row wrap;
     position: relative;
 }
 
 .halfpage {
-  height: 70vh;
+  height: 680px;
 }
 
 .header {
@@ -103,7 +104,7 @@ h3 {
   flex: 1;
   align-items: flex-end;
   justify-content: flex-end;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   min-height: 10vh;
   margin-right: 50px;
 }
@@ -506,9 +507,6 @@ and (orientation : portrait) {
 @media only screen 
 and (min-width : 1224px) {
 /* Styles */
-  .infobox {
-    border: 2px solid green;
-  }
 }
 
 /* Large screens ----------- */
