@@ -143,6 +143,9 @@ body {
   font-size: 1.5rem;
   font-weight: 700; }
 
+.btn-interact:hover {
+  color: #efefef; }
+
 .btn:link,
 .btn:visited {
   position: absolute;
