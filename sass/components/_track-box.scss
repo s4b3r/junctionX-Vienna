@@ -1,0 +1,14 @@
+.track-description-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column; // CHANGE BACK TO WHEN TRACKS ARE PUBLISHED row;
+  flex-wrap: wrap;
+  color: #232323;
+  width:80%;
+
+  // remove this after tracks are releashed
+  text-align: center;
+}

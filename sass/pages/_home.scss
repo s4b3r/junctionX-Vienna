@@ -1,0 +1,87 @@
+.page {
+    /*height: 95vh;*/
+    // height: 92rem;
+    flex-direction: row;
+    flex-flow: row wrap;
+    position: relative;
+    min-height: 100%;
+    overflow: visible;
+    flex-shrink: 0;
+
+    //@include clearfix;
+}
+
+.halfpage {
+  height: 68rem;
+}
+
+.mission {
+  background-color: #000;
+}
+
+.tracks {
+    min-height: 50%;
+}
+
+.tracks, .partners {
+  position: relative;
+  background-color: #F5F2F2;
+
+}
+
+.tracks p {
+  color: #232323;
+  padding: 1rem 0 1rem 0;
+}
+
+.all-tracks-heading, .track-description-heading-primary {
+  text-transform:  uppercase;
+}
+
+.track-description-heading-primary{
+  line-height: 1;
+}
+
+.track-description-heading-main {
+  display:block;
+  font-weight: 700;
+}
+
+.track-description-heading-sub {
+  font-size: 1rem;
+  display:block;
+  padding:0.5rem 0 0.5rem 0;
+}
+
+.track {
+  padding: 2rem 0 2rem 0;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column
+}
+
+.recruit {
+  background-image: linear-gradient(#000000, #232323);
+}
+
+.partners-heading {
+  text-transform: uppercase;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: linear-gradient(#000000, #232323);
+}
+
+.buttons {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: .4rem .2rem;
+}

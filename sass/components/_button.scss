@@ -1,0 +1,77 @@
+.button-box {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  min-height: 10vh;
+  margin-right: 5rem;
+
+  @include respond(phone) {
+      margin-right: 0;
+      justify-content: center;
+  }
+
+}
+
+.button-box__button {
+  /* max-width:200px; */
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+.btn-interact:link, .btn-interact:visited {
+  text-transform: uppercase;
+  color: #232323;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.btn:link, 
+.btn:visited {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  text-transform: uppercase;
+  text-decoration: none;
+  display:inline-block;
+  color: #eeeeee;
+  width: 18rem;
+  /*margin-top: 50px;*/
+  transition: 1s ease-in-out;
+}
+
+.btn-magenta {
+  border: #E60C85 0.1rem solid;
+  height: 4rem;
+  /*box-shadow: 3px 3px 5px 6px #ccc*/
+}
+
+.btn-white {
+  height: 4rem;
+  border: #eee 1px solid;
+  transform: translate(5px, 5px);
+}
+
+.btn-text {
+  display: block;
+  transform: translate(-5px, 5px);
+}
+
+.btn:hover .btn-white {
+  transform: translate(0px, 0px);
+}
+
+.btn:active .btn-magenta {
+  background-color: #E60C85;
+}
+
+.btn-footer:link {
+  text-decoration: none;
+  color: #eee;
+  text-transform: uppercase;
+}

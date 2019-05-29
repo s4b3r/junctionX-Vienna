@@ -5,31 +5,33 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<main class="wrapper" role="main">
-			<section class="content">
-				<section class="page header">
-					<div class="button-box">
-						<div class="button">
-							<a href="http://localhost/apply.html" class="btn-interact">Apply Now</a>
-						</div>
-						<div class="button">
-							<a href="http://localhost/volunteer.html" class="btn-interact">Volunteer</a>
-						</div>
+		<header class="header">
+				<div class="button-box">
+					<div class="button-box__button">
+						<a href="https://docs.google.com/forms/d/1Hxhh4SzHEifCq8kQJoXZx9GWz6UNuEDqcdBiR8hGDNY/viewform?edit_requested=true" class="btn-interact">Apply Now</a>
+					</div>
+					<div class="button-box__button">
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLScf0JpdI75z2po2vqHIoqByOMUxZpF7noXUYVRK-isrVV2ArA/viewform" class="btn-interact">Volunteer</a>
+					</div>
+				</div>
+
+				<div class="header__box">
+					<div class="header__box--logo">
+						<img src="css/images/JunctionXVienna-wordmark-white.svg" alt="JunctionX Vienna" class="logo">
 					</div>
 
-					<div class="header-box">
-						<div class="header-img">
-							<img src="images/JunctionXVienna-wordmark-white.svg" alt="JunctionX Vienna" class="logo">
-						</div>
-            <h1 class="heading-primary">
-              <span class="heading-primary-main">Hackathon</span>
-              <span class="heading-primary-sub">June 7th - 9th 2019</span>
-            </h1>
-          </div>
-				</section>
+					<h1 class="heading-primary">
+						<span class="heading-primary--main">Hackathon</span>
+						<span class="heading-primary--sub">June 7th - 9th 2019</span>
+					</h1>
+				</div>
+
+		</header>
+		<main class="wrapper" role="main">
+			<section class="content">
  				<section class="page mission">
 					<section class="description-box">
 						<div class="line-middle"></div>
@@ -54,29 +56,31 @@
 
 					<section class="track-description-box">
 						<h1 class="all-tracks-heading">2019 Tracks</h1>
-						<section class="track">
-							<h2 class="track-description-heading-primary">
-								<span class="track-description-heading-main">Track Name</span>
-								<span class="track-description-heading-sub">Sponsor Name</span>
-							</h2>
-							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-						</section>
-						<section class="track">
-							<h2 class="track-description-heading-primary">
-								<span class="track-description-heading-main">Track Name</span>
-								<span class="track-description-heading-sub">Sponsor Name</span>
-							</h2>
-							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-						</section>
-						<section class="track">
-							<h2 class="track-description-heading-primary">
-								<span class="track-description-heading-main">Track Name</span>
-								<span class="track-description-heading-sub">Sponsor Name</span>
-							</h2>
-							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-						</section>
-					</section>
 
+						<p class="track-info-upcoming">More info on tracks coming later!</p>
+<!-- 						<section class="track">
+							<h2 class="track-description-heading-primary">
+								<span class="track-description-heading-main">Track Name</span>
+								<span class="track-description-heading-sub">Sponsor Name</span>
+							</h2>
+							<p class="track-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+						</section>
+						<section class="track">
+							<h2 class="track-description-heading-primary">
+								<span class="track-description-heading-main">Track Name</span>
+								<span class="track-description-heading-sub">Sponsor Name</span>
+							</h2>
+							<p class="track-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+						</section>
+						<section class="track">
+							<h2 class="track-description-heading-primary">
+								<span class="track-description-heading-main">Track Name</span>
+								<span class="track-description-heading-sub">Sponsor Name</span>
+							</h2>
+							<p class="track-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+						</section>
+					-->
+					</section>
 				</section>
 				<section class="page halfpage recruit">
 					<section class="infoboxes">
@@ -114,26 +118,25 @@
 				<section class="page partners">
           <section class="partners-content-box">
               <h1 class="partners-heading">Our Partners</h1>
-              <p>Our partners are a mix of international companies and local organisations, all looking to support creators to invent the future.</p>
-
-              <p class="">Want to see your logo here? Contact us at partnerships@junctionxvienna.com to get on board with the JunctuonX Vienna community.</p>
+							<p class="partners-description">Our partners are a mix of international companies and local organisations, all looking to support creators to invent the future. More will be released later!</p>
+              <p class="partners-description">Want to see your logo here? Contact us at partnerships@junctionxvienna.com to get on board with the JunctuonX Vienna community.</p>
 
               <section class="partner-boxes-box">
                 <figure class="partner-box">
-                  <img src="images/Lemmings logo/Lemmings logo.png" class="partner-logo">
+                  <img src="css/images/Lemmings logo/Lemmings logo.png" class="partner-logo">
+                </figure>
+
+<!--                 <figure class="partner-box">
+                  <img src="css/images/Lemmings logo/Lemmings logo.png" class="partner-logo">
                 </figure>
 
                 <figure class="partner-box">
-                  <img src="images/Lemmings logo/Lemmings logo.png" class="partner-logo">
+                  <img src="css/images/Lemmings logo/Lemmings logo.png" class="partner-logo">
                 </figure>
 
                 <figure class="partner-box">
-                  <img src="images/Lemmings logo/Lemmings logo.png" class="partner-logo">
-                </figure>
-
-                <figure class="partner-box">
-                  <img src="images/Lemmings logo/Lemmings logo.png" class="partner-logo">
-                </figure>
+                  <img src="css/images/Lemmings logo/Lemmings logo.png" class="partner-logo">
+                </figure> -->
               </section>
           </section>
 
