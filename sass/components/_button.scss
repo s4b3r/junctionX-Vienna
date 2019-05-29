@@ -70,7 +70,8 @@
   background-color: #E60C85;
 }
 
-.btn-footer:link {
+.btn-footer:link,
+.btn-footer:visited {
   text-decoration: none;
   color: #eee;
   text-transform: uppercase;
