@@ -14,6 +14,13 @@
   height: 68rem;
 }
 
+.junction-description {
+  background-image: /*linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), */url(images/bg/bg.png);
+  @include respond(phone) {
+    min-height: 150vh;
+  }
+}
+
 .mission {
   background-color: #000;
 }

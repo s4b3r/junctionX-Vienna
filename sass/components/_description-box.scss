@@ -24,10 +24,6 @@
   clip-path: polygon(0 0, 25% 0, 25% 100%, 0 100%);
 }
 
-.junction-description {
-  background-image: /*linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), */url(images/bg/bg.png);
-}
-
 .junction-description-box {
   position: absolute;
   top: 50%;
@@ -41,4 +37,5 @@
 
 .description-text-box {
   padding: 1rem 0 1rem 0;
+  max-width: 80rem;
 }

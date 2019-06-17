@@ -52,6 +52,8 @@ body {
   color: #232323; }
 
 .heading-primary--main {
+  font-family: "Monteserrat", sans-serif;
+  font-weight: bold;
   display: block;
   text-align: center;
   line-height: 1;
@@ -62,6 +64,8 @@ body {
       font-size: 2rem; } }
 
 .heading-primary--sub {
+  font-family: "Monteserrat", sans-serif;
+  font-weight: lighter;
   display: block;
   text-align: center;
   line-height: 1; }
@@ -78,7 +82,7 @@ body {
 .description-text {
   font-size: 1.6rem;
   text-transform: none;
-  text-align: left;
+  text-align: justify;
   padding: 1rem 0 1rem 0; }
 
 .all-tracks-heading {
@@ -115,7 +119,7 @@ body {
   font-size: 1.6rem; }
 
 .bold {
-  font-weight: 700; }
+  font-family: "Lato-Bold"; }
 
 .button-box {
   display: flex;
@@ -209,9 +213,6 @@ body {
   flex-basis: 100%;
   clip-path: polygon(0 0, 25% 0, 25% 100%, 0 100%); }
 
-.junction-description {
-  background-image: url(images/bg/bg.png); }
-
 .junction-description-box {
   position: absolute;
   top: 50%;
@@ -223,7 +224,8 @@ body {
   width: 70%; }
 
 .description-text-box {
-  padding: 1rem 0 1rem 0; }
+  padding: 1rem 0 1rem 0;
+  max-width: 80rem; }
 
 .infoboxes {
   width: 100vw;
@@ -322,6 +324,12 @@ body {
 
 .halfpage {
   height: 68rem; }
+
+.junction-description {
+  background-image: url(images/bg/bg.png); }
+  @media (max-width: 600px) {
+    .junction-description {
+      min-height: 150vh; } }
 
 .mission {
   background-color: #000; }
