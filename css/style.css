@@ -104,7 +104,7 @@ body {
   font-size: 1rem; }
 
 .infobox-text {
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
   font-size: 1.2rem; }
 
 .partners-heading {
@@ -155,11 +155,11 @@ body {
   bottom: 10%;
   left: 50%;
   transform: translate(-50%, 0%);
+  width: 70%;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   color: #eeeeee;
-  width: 18rem;
   /*margin-top: 50px;*/
   transition: 1s ease-in-out; }
 
@@ -188,6 +188,58 @@ body {
   text-decoration: none;
   color: #eee;
   text-transform: uppercase; }
+
+.apply-btn {
+  width: 100%;
+  padding: 2rem 4rem;
+  margin-top: 5%;
+  background: none;
+  color: #eeeeee;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+  font-size: 1.5rem; }
+  @media (max-width: 600px) {
+    .apply-btn {
+      font-size: 1.2rem; } }
+
+.apply-btn:focus {
+  outline: none; }
+
+.apply-btn:after,
+.apply-btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 0.2rem solid #ec008b;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s; }
+
+.apply-btn:after {
+  -webkit-transform: translate(3px, 3px);
+  transform: translate(3px, 3px);
+  border-color: #35E2DF; }
+
+.apply-btn:before {
+  -webkit-transform: translate(-3px, -3px);
+  transform: translate(-3px, -3px); }
+
+.apply-btn:hover:after,
+.apply-btn:hover:before {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  border: 2px solid transparent;
+  background-color: transparent;
+  border-image: linear-gradient(to right, #ec008b, #35E2DF);
+  border-image-slice: 1; }
 
 .description-box {
   position: absolute;
