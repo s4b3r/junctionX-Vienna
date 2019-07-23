@@ -11,92 +11,101 @@
 }
 
 .halfpage {
-  height: 68rem;
+    height: 68rem;
 }
 
 .junction-description {
-  background-image: /*linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), */url(images/bg/bg.png);
-  @include respond(phone) {
-    min-height: 150vh;
-  }
+    background-image: /*linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), */ url(images/bg/bg.png);
+    @include respond(phone) {
+        min-height: 150vh;
+    }
 }
 
 .mission {
-  background-color: #000;
+    background-color: #000;
 }
 
 .tracks {
     min-height: 50vh;
 }
 
-.tracks, .partners {
-  position: relative;
-  background-color: #F5F2F2;
-
+.tracks,
+.partners {
+    position: relative;
+    background-color: #f5f2f2;
 }
 
 .tracks p {
-  color: #232323;
-  padding: 1rem 0 1rem 0;
+    color: #232323;
+    padding: 1rem 0 1rem 0;
 }
 
-.all-tracks-heading, .track-description-heading-primary {
-  text-transform:  uppercase;
+.all-tracks-heading,
+.track-description-heading-primary {
+    text-transform: uppercase;
 }
 
-.track-description-heading-primary{
-  line-height: 1;
+.track-description-heading-primary {
+    line-height: 1;
 }
 
 .track-description-heading-main {
-  display:block;
-  font-weight: 700;
+    display: block;
+    font-weight: 700;
 }
 
 .track-description-heading-sub {
-  font-size: 1rem;
-  display:block;
-  padding:0.5rem 0 0.5rem 0;
+    font-size: 1rem;
+    display: block;
+    padding: 0.5rem 0 0.5rem 0;
 }
 
 .track {
-  padding: 2rem 0 2rem 0;
+    padding: 2rem 0 2rem 0;
 }
 
 .partners {
-  display: flex;
-  flex-direction: column;
-  
-  min-height: 50rem;
+    display: flex;
+    flex-direction: column;
 
-  @include respond(phone) {
-    min-height: 90vh;
-  }
+    min-height: 50rem;
+
+    @include respond(phone) {
+        min-height: 90vh;
+    }
 }
 
 .recruit {
-  background-image: linear-gradient(#000000, #232323);
+    background-image: linear-gradient(#000000, #232323);
 }
 
 .partners-heading {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-image: linear-gradient(#000000, #232323);
-  
-  @include respond(phone) {
-      height: 20vh;
-  }
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(#000000, #232323);
+
+    @include respond(phone) {
+        height: 20vh;
+    }
 }
 
 .buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: .4rem .2rem;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.4rem 0.2rem;
+}
+
+.buttons:before,
+.buttons:after {
+    content: "";
+    display: block;
+    width: 2px;
+    background-color: red;
 }
