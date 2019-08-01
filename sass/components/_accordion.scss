@@ -1,0 +1,72 @@
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+/* Accordion styles */
+.tabs {
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 0.4rem 0.4rem -0.2rem rgba(0, 0, 0, 0.5);
+    max-width: 60rem;
+    align-self: center;
+}
+.tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    &-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        background: linear-gradient(130deg, $junction-purple-light, $junction-purple-dark);
+        font-size: 1.6rem;
+        font-weight: bold;
+        cursor: pointer;
+        /* Icon */
+        &:hover {
+            background: linear-gradient(130deg, darken($junction-purple-light, 2%), darken($junction-purple-dark, 2%));
+        }
+        &::after {
+            content: "\276F";
+            width: 1rem;
+            height: 1rem;
+            text-align: center;
+            transition: all 0.35s;
+        }
+    }
+    &-content {
+        max-height: 0;
+        padding: 0 1rem;
+        color: $color-dark-grey;
+        background: white;
+        transition: all 0.35s;
+        font-size: 1.6rem;
+    }
+    &-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        font-size: 1.6rem;
+        background: linear-gradient(130deg, $junction-purple-light, $junction-purple-dark);
+        cursor: pointer;
+        &:hover {
+            background: linear-gradient(130deg, darken($junction-purple-light, 2%), darken($junction-purple-dark, 2%));
+        }
+    }
+}
+
+// :checked
+input:checked {
+    + .tab-label {
+        background: linear-gradient(130deg,darken($junction-purple-light, 2%), darken($junction-purple-dark, 2%)) ;
+        &::after {
+            transform: rotate(90deg);
+        }
+    }
+    ~ .tab-content {
+        max-height: 100vh;
+        padding: 1rem;
+    }
+}

@@ -107,5 +107,16 @@
     content: "";
     display: block;
     width: 2px;
-    background-color: red;
+    //background-color: red;
+}
+
+.faq {
+    display: flex;
+    background-color: #000;
+    color: $color-snow;
+}
+
+.faq .heading-primary--main {
+    margin-bottom: 1rem;
+    color: $color-snow;
 }
