@@ -114,6 +114,14 @@
     display: flex;
     background-color: #000;
     color: $color-snow;
+
+    @include respond(phone) {
+        min-height: 120vh;
+    }
+
+    @include respond(phone_landscape) {
+        min-height: 150vh;
+    }
 }
 
 .faq .heading-primary--main {

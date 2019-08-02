@@ -518,6 +518,12 @@ input:checked ~ .tab-content {
   display: flex;
   background-color: #000;
   color: #fbfbfb; }
+  @media (max-width: 600px) {
+    .faq {
+      min-height: 120vh; } }
+  @media (max-width: 900px) {
+    .faq {
+      min-height: 150vh; } }
 
 .faq .heading-primary--main {
   margin-bottom: 1rem;

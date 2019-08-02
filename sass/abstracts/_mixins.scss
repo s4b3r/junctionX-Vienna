@@ -34,4 +34,7 @@ $brekapoint argument choices:
     @if $breakpoint == phone {
         @media (max-width: 600px) { @content };
     } 
+    @else if $breakpoint == phone_landscape {
+        @media (max-width: 900px) { @content };
+    } 
 }
