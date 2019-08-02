@@ -15,8 +15,13 @@
 }
 
 .junction-description {
-    background-image: /*linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), */ url(images/bg/bg.png);
+    background-image: url(images/bg/bg.png);
+
     @include respond(phone) {
+        min-height: 150vh;
+    }
+    
+    @include respond(phoneland) {
         min-height: 150vh;
     }
 }
@@ -115,13 +120,14 @@
     background-color: #000;
     color: $color-snow;
 
+    @include respond(phoneland) {
+        min-height: 150vh;
+    }
+
     @include respond(phone) {
         min-height: 120vh;
     }
 
-    @include respond(phone_landscape) {
-        min-height: 150vh;
-    }
 }
 
 .faq .heading-primary--main {

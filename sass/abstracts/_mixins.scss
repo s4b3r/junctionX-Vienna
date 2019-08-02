@@ -22,6 +22,10 @@
     @media (max-width: 600px) { @content };
 }
 
+@mixin respond-phone-landscape {
+    @media (max-width: 900px) { @content };
+}
+
 /*
 $brekapoint argument choices:
 - phone
@@ -31,10 +35,11 @@ $brekapoint argument choices:
 */
 
 @mixin respond($breakpoint) {
+
     @if $breakpoint == phone {
-        @media (max-width: 600px) { @content };
+        @media only screen and (max-width: 600px) { @content };
     } 
-    @else if $breakpoint == phone_landscape {
-        @media (max-width: 900px) { @content };
+    @else if $breakpoint == phoneland {
+        @media screen and (max-width: 900px) { @content };
     } 
 }
