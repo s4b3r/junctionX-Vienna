@@ -447,7 +447,7 @@ input:checked ~ .tab-content {
     .junction-description {
       min-height: 150vh; } }
 
-.mission {
+.mission, .agenda {
   background-color: #000; }
 
 .tracks {
@@ -531,3 +531,20 @@ input:checked ~ .tab-content {
 .faq .heading-primary--main {
   margin-bottom: 1rem;
   color: #fbfbfb; }
+
+.agenda {
+  min-height: 50rem; }
+  @media only screen and (max-width: 600px) {
+    .agenda {
+      min-height: 40rem; } }
+
+.agenda .content-box {
+  max-width: 720px;
+  max-height: 389px;
+  height: auto; }
+  @media only screen and (max-width: 600px) {
+    .agenda .content-box {
+      width: 100%; } }
+
+.agenda-img {
+  width: 100%; }
