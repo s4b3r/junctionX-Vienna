@@ -96,7 +96,7 @@
 
 .footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-image: linear-gradient(#000000, #232323);
 
     @include respond(phone) {
@@ -160,4 +160,30 @@
 
 .agenda-img {
     width: 100%;
+}
+
+.location {
+    color: black;
+    & iframe {
+        align-self: center;
+        margin-top: 3rem;
+        @include respond(phone) {
+            width:100%;
+            height: 30rem;
+
+        }
+    }
+    min-height: 70rem;
+    background-color: $color-very-light-grey;
+}
+
+.address-box {
+    max-width: 60rem;
+    align-self: center;
+    margin-top: 3rem;
+}
+
+.social-media-buttons {
+    display: flex;
+    justify-content: center;
 }

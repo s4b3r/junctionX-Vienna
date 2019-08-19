@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/s4b3r/junctionX-Vienna#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.1",
+    "font-awesome": "^4.7.0",
     "node-sass": "^4.12.0"
   }
 }
