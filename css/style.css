@@ -439,13 +439,6 @@ input:checked ~ .tab-content {
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 50rem; }
-  .thank-you__box .thank-you__text {
-    color: #E60C85;
-    font-size: 2rem;
-    font-weight: 700;
-    -webkit-animation: pulsate 3s ease-out;
-    -webkit-animation-iteration-count: infinite;
-    opacity: 0.5; }
   .thank-you__box .typing1 {
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
@@ -476,6 +469,11 @@ input:checked ~ .tab-content {
     opacity: 0;
     animation-fill-mode: forwards;
     text-align: left; }
+  @media only screen and (max-width: 600px) {
+    .thank-you__box {
+      min-width: 0; }
+      .thank-you__box .typing1, .thank-you__box .typing2 {
+        font-size: 1rem; } }
 
 @-webkit-keyframes pulsate {
   0% {

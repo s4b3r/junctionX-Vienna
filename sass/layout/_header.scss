@@ -32,15 +32,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 50rem;
-    
-    & .thank-you__text {
-        color: $color-magenta;
-        font-size: 2rem;
-        font-weight: 700;
-        -webkit-animation: pulsate 3s ease-out;
-        -webkit-animation-iteration-count: infinite; 
-        opacity: 0.5;
-    }
 
     & .typing1 {
         overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -69,6 +60,13 @@
         opacity: 0;
         animation-fill-mode: forwards;
         text-align: left;
+    }
+    @include respond(phone) {
+        & .typing1, & .typing2 {
+            font-size: 1rem;
+        }
+
+        min-width: 0;
     }
 }
 
