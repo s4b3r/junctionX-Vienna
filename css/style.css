@@ -433,6 +433,85 @@ input:checked ~ .tab-content {
 .logo {
   max-width: 100%; }
 
+.thank-you__box {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 50rem; }
+  .thank-you__box .thank-you__text {
+    color: #E60C85;
+    font-size: 2rem;
+    font-weight: 700;
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.5; }
+  .thank-you__box .typing1 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: none;
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    color: #E60C85;
+    text-align: left; }
+  .thank-you__box .typing2 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing2 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation-delay: 3.5s;
+    color: #E60C85;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    text-align: left; }
+
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.5;
+    font-size: 2rem; }
+  50% {
+    opacity: 1.0;
+    font-size: 2.5rem; }
+  100% {
+    opacity: 0.5;
+    font-size: 2rem; } }
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+    border-right: .15em solid orange; }
+  to {
+    width: 100%;
+    border-right: .15em solid orange; } }
+
+@keyframes typing2 {
+  from {
+    opacity: 1;
+    width: 0; }
+  to {
+    opacity: 1;
+    width: 100%; } }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: orange; } }
+
 .page {
   flex-direction: row;
   flex-flow: row wrap;
